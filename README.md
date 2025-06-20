@@ -33,10 +33,10 @@ ORDER BY
 | 2024 | 206.27 | 258.40 | 164.01 | 143960681000.00 |
 | 2025 | 219.20 | 246.78 | 172.19 | 6015363000.00 |
 
- ![Grafico de Lineas Precio Cierre Promedio Anual de AAPL](C:\Users\javie\Proyecto-Analisis-AAPL-2020-2025\images\Grafico_precio_cierre_Promedio_anual.png)
+ ![Grafico de Lineas Precio Cierre Promedio Anual de AAPL](C:/Users/javie/Proyecto-Analisis-AAPL-2020-2025/images/Grafico_precio_cierre_Promedio_anual.png)
  
 
- ![Grafico de Barras Volumen Total Anual de AAPL](C:\Users\javie\Proyecto-Analisis-AAPL-2020-2025\images\Grafico_Volumen_Total_Anual.png)
+ ![Grafico de Barras Volumen Total Anual de AAPL](C:/Users/javie/Proyecto-Analisis-AAPL-2020-2025/images/Grafico_Volumen_Total_Anual.png)
 
  ### Observación y Conclusiones Clave
 
@@ -136,9 +136,9 @@ ORDER BY
 | 2025  | 6     | 201.70                           | 201.70                         | 201.70                         | 35343100                |
 
 
-![Grafico de Barras Volumen Total Mensual de AAPL](C:\Users\javie\Proyecto-Analisis-AAPL-2020-2025\images\Grafico_Volumen_Total_Mensual.png)
+![Grafico de Barras Volumen Total Mensual de AAPL](C:/Users/javie/Proyecto-Analisis-AAPL-2020-2025/images/Grafico_Volumen_Total_Mensual.png)
 
-![Grafico de Lineas Precio Cierre Promedio Mensual de AAPL](C:\Users\javie\Proyecto-Analisis-AAPL-2020-2025\images\Grafico_precio_cierre_Promedio_Mensual.png)
+![Grafico de Lineas Precio Cierre Promedio Mensual de AAPL](C:/Users/javie/Proyecto-Analisis-AAPL-2020-2025/images/Grafico_precio_cierre_Promedio_Mensual.png)
 
 
 ### Observación y Conclusiones Clave
@@ -1433,7 +1433,7 @@ ORDER BY
 | 02/06/2025 | 201.7         | 200.85                 | 0.42320139               |
 
 
- ![Histograma de Cambios Porcentuales Diarios de AAPL](C:\Users\javie\Proyecto-Analisis-AAPL-2020-2025\images\Grafico_Distribucion_de_Cambios_Porcentuales_Diarios_de_AAPL.png)
+ ![Histograma de Cambios Porcentuales Diarios de AAPL](C:/Users/javie/Proyecto-Analisis-AAPL-2020-2025/images/Grafico_Distribucion_de_Cambios_Porcentuales_Diarios_de_AAPL.png)
  
  *Grafico de la frecuencia de los cambios porcentuales diarios en el precio de las acciones de Apple entre 2020 y 2025*
 
