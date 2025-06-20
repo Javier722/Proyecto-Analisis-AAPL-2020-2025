@@ -33,11 +33,13 @@ ORDER BY
 | 2024 | 206.27 | 258.40 | 164.01 | 143960681000.00 |
 | 2025 | 219.20 | 246.78 | 172.19 | 6015363000.00 |
 
- ![Grafico de Lineas Precio Cierre Promedio Anual de AAPL](C:/Users/javie/Proyecto-Analisis-AAPL-2020-2025/images/Grafico_precio_cierre_Promedio_anual.png)
- 
+### Tendencia Anual de Precios de Cierre Promedio
 
- ![Grafico de Barras Volumen Total Anual de AAPL](C:/Users/javie/Proyecto-Analisis-AAPL-2020-2025/images/Grafico_Volumen_Total_Anual.png)
+![Grafico de Lineas Precio Cierre Promedio Anual de AAPL](images/Grafico_precio_cierre_Promedio_anual.png)
 
+### Volumen Total Anual
+
+![Grafico de Barras Volumen Total Anual de AAPL](images/Grafico_Volumen_Total_Anual.png)
  ### Observación y Conclusiones Clave
 
 * **Crecimiento Sostenido del Precio:** Podemos observar una clara tendencia a la alza en el precio del cierre promedio anual de Apple a lo largo de los años. Desde un promedio de $108.25 USD en el 2020 hasta $219.20 USD en 2025, lo cual demuestra un crecimiento significativo.
