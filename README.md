@@ -1,5 +1,23 @@
 # Proyecto-Analisis-AAPL-2020-2025
-Proyecto basado en SQL usando el dataset "apple_5yr_one.csv" tomando en Kaggle
+Este proyecto es basado en SQL, usando el dataset de la usuaria "samanfatima7" de nombre "apple_5yr_one.csv" tomado de la plataforma Kaggle 
+
+### Introducción
+
+Como entuciasta de los datos y la tecnología, decidí explorar el comportamiento de las acciones de Apple (AAPL) durante un periodo de cinco años(2020-2025), utilizando SQL para extraer insights valiosos. 
+
+## Objetivos
+
+* Extracción, transformación y carga (ETL) de datos historicos de las acciones de Apple
+* Limpiar y estructurar los datos en una base de datos PostgreSQL
+* Realizar un analisis utilizando SQL para lograr identificar tendencias, volatibilidad y patrones
+
+## Herramientas Utilizadas 
+
+* **PostgreSQL** 
+* **pgAdmin 4:** Interfaz grafica para la administración y consulta de bases de datos PostgreSQL
+* **Visual Studio Code (VS Code):** Editor de código para la gestión del proyecto y edición del 'README.md'
+* **GitHub:** Control de versiones y alojamiento del repositorio del proyecto
+* **Microsoft Excel:** Para la visualización de los datos
 
 ## Análisis Anual del Rendimiento de Acciones de Apple (AAPL)
 
