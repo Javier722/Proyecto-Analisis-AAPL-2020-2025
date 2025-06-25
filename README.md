@@ -1,9 +1,9 @@
 # Proyecto-Analisis-AAPL-2020-2025
 Este proyecto es basado en SQL, usando el dataset de la usuaria "samanfatima7" de nombre "apple_5yr_one.csv" tomado de la plataforma Kaggle 
 
-### Introducción
+## Introducción
 
-Como entuciasta de los datos y la tecnología, decidí explorar el comportamiento de las acciones de Apple (AAPL) durante un periodo de cinco años(2020-2025), utilizando SQL para extraer insights valiosos. 
+Este proyecto tiene como objetivo analizar el comportamiento de las acciones de Apple (APPL) entre 2020 hasta una parte de 2025(ya que aun estamos en dicho año), con enfasis en la evolución de sus precios, volumen de negociación y principales indicadores tecnicos. A traves de herramientas como Excel y SQL, se busca indentificar patrones relevantes, posibles puntos de inflexión y tendencias generales en el mercado bursatil, con el fin de obtener conclusiones de utilidad para la toma de decisiones financieras y el analisis de inversiones.
 
 ## Objetivos
 
@@ -18,6 +18,53 @@ Como entuciasta de los datos y la tecnología, decidí explorar el comportamient
 * **Visual Studio Code (VS Code):** Editor de código para la gestión del proyecto y edición del 'README.md'
 * **GitHub:** Control de versiones y alojamiento del repositorio del proyecto
 * **Microsoft Excel:** Para la visualización de los datos
+
+### Creación de tabla temporal para la carga de datos
+
+```sql
+CREATE TABLE temp_apple_stock_data (
+    Date DATE,
+    Open NUMERIC(10, 2),
+    High NUMERIC(10, 2),
+    Low NUMERIC(10, 2),
+    Close NUMERIC(10, 2),
+    "Adj Close" NUMERIC(10, 2), 
+    Volume BIGINT
+); 
+```
+### Carga de datos  
+
+```sql
+COPY temp_apple_stock_data FROM 'C:\pg_temp\apple_5yr_one.csv' DELIMITER ',' CSV HEADER;
+```
+
+### Verificación de la carga
+```sql
+SELECT COUNT(*) FROM temp_apple_stock_data;
+SELECT * FROM temp_apple_stock_data LIMIT 10;
+```
+
+## Limpieza y preprocesamiento 
+### Conteo de valores nulos
+```sql
+
+SELECT
+    COUNT(*) FILTER (WHERE Date IS NULL) AS null_date,
+    COUNT(*) FILTER (WHERE Open IS NULL) AS null_open,
+    COUNT(*) FILTER (WHERE High IS NULL) AS null_high,
+    COUNT(*) FILTER (WHERE Low IS NULL) AS null_low,
+    COUNT(*) FILTER (WHERE Close IS NULL) AS null_close,
+    COUNT(*) FILTER (WHERE Volume IS NULL) AS null_volume
+FROM temp_apple_stock_data;
+```
+
+### Verificación de valores 0 o negativos en precios o volumen
+```sql
+DELETE FROM temp_apple_stock_data
+WHERE
+    Open <= 0 OR High <= 0 OR Low <= 0 OR Close <= 0 OR Volume <= 0;
+```
+
 
 ## Análisis Anual del Rendimiento de Acciones de Apple (AAPL)
 
@@ -1475,3 +1522,11 @@ ORDER BY
 * **2021-2023:** Cambios moderados y con ciertos periodos de estabilidad
 * **2024:** Incrementos y caídas pronunciadas, que sugieren actividad intensa en el mercado
 * **2025:** Aunque este año aun esta en curso, se nos muestra una corrección importante en Abril.
+
+
+## Conclusiones Finales
+
+* **Tendencia general positiva:** A pesar de eventos globales entre 2020 y 2022 como lo fue la pandemia, las acciones de APPL mantuvieron una tendencia alcista en el mediano y largo plazo, con puntos de volatilidad que nos reflejan la capacidad de resiliencia de la compañia.
+* **Volumen como señal de interes del mercado:** Se observan aumentos inusuales en el volumen durante ciertos trimestres, lo cual puede estar vinculado a publicaciones de resultados o lanzamientos clave.
+* **Impacto visible de eventos externos:** Cambios en politicas monetarias globale y periodos como los de la pandemia generaron cambios bruscos en el comportamiento del precio.
+* **Valor del análisis estructurado:** La combinación de SQL para la limpieza y segmentación de los datos, junto con las visualización de los datos en Excel, permite una exploración clara, replicable y visualmente accesible del comportamiento bursátil.
